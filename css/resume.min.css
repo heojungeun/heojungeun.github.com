@@ -104,7 +104,9 @@ p.lead {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 17rem;
-    height: 100vh
+    height: 100vh;
+    border-style: hidden;
+    box-shadow: 5px 5px 5px;
   }
   #sideNav .navbar-brand {
     display: -webkit-box;
@@ -116,7 +118,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: .5rem solid rgba(0, 0, 0, 0.75)
+    /* border: .5rem solid rgba(0, 0, 0, 0.75) */
   }
   #sideNav .navbar-collapse {
     display: -webkit-box;
@@ -147,13 +149,6 @@ p.lead {
   }
 }
 
-#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    color: rgba(0, 0, 0, 0.75);
-}
-
-#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(0, 0, 0, 0.4);
-}
 
 section.resume-section {
   padding-top: 5rem !important;
@@ -182,7 +177,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #e67272 !important
+  background-color: #ffffff !important
 }
 
 .text-primary {
