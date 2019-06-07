@@ -199,3 +199,15 @@ a {
 a:active, a:focus, a:hover {
   color: #824027
 }
+
+.story-txt{
+  /* font-family:'Song Myung', serif; */
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 20px;
+}
+.story-txt0{
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 10px;
+  color: #000000;
+  text-align: right;
+}
