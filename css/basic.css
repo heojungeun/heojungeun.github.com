@@ -96,6 +96,10 @@ nav {
   height: 20vh;
 }
 
+.main-header {
+  height: 90vh;
+}
+
 .c-title {
   margin: 0;
   padding-bottom: 50px;
