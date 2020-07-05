@@ -1,0 +1,263 @@
+:root {
+  --white: #fff;
+  --text-color: #f0f4f5;
+  --navbar-background-color: rgb(66, 70, 103);
+  --accent-color: rgb(21, 25, 62);
+  --space-color: rgb(21, 21, 24);
+  --android: #3DDC84;
+  --python: #306998;
+  --nodejs: #68A063;
+  --color-transp: rgba(0, 0, 0, 0);
+}
+
+@font-face {
+  font-family: 'neodgm';
+  font-style: normal;
+  src: url(../fonts/neodgm.woff) format('woff');
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: var(--space-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav {
+  transition: all 350ms ease-out;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: var(--navbar-background-color);
+  padding: 4px 50px;
+  font-family: 'neodgm';
+  position: sticky;
+  top: 0px;
+}
+
+.navbar-logo {
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.navbar-menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.navbar-menu li {
+  padding: 8px 12px;
+  margin: 0 10px;
+}
+
+.navbar-icons {
+  list-style: none;
+  color: var(--text-color);
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar-icons li {
+  padding: 8px 12px;
+}
+
+.navbar-toggleBtn {
+  display: none;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.content {
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-header {
+  font-family: 'neodgm';
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+}
+
+.c-title {
+  margin: 0;
+  padding-bottom: 50px;
+  border-bottom: 2px dashed var(--text-color);
+  max-width: 500px;
+  font-size: 50px;
+}
+
+.c-current-title {
+  font-family: 'neodgm';
+  color: var(--text-color);
+  display: flex;
+}
+
+.c-current-container {
+  height: 80vh;
+}
+
+.c-current {
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--white);
+  font-family: 'neodgm';
+}
+
+.top-side{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 50px;
+}
+
+.g-profile{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.status{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 50px;
+  font-size: 20px;
+}
+
+.skill-list{
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.list-items {
+  display: flex;
+  padding-right: 10px;
+  font-size: 50px;
+}
+
+.fa-android:hover {
+  color: var(--android);
+}
+
+.fa-python:hover {
+  color: var(--python);
+}
+
+.fa-node-js:hover {
+  color: var(--nodejs);
+}
+
+.circle{
+  width: 50%;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.contribution h3{
+  text-align: center;
+}
+
+.contrib-column {
+  display: none;
+}
+
+.fab, .fas {
+  padding: 3px 10px;
+}
+
+.c-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  background: var(--text-color);
+  font-family: 'neodgm';
+  margin: 0;
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+.card-img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 24px;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-toggleBtn {
+    display: block;
+  }
+
+  .navbar-toggle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .navbar-menu.active,
+  .navbar-icons.active {
+    display: flex;
+  }
+}
