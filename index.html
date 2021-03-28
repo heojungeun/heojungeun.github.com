@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/basic.css" />
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/32972942e1.js" crossorigin="anonymous"></script>
-    <script src="js/main.js" defer></script>
     <!-- Prepare a container for your calendar. -->
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
     <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+    <link rel="stylesheet" href="css/termynal.css">
   </head>
   <body>
     <nav class="navbar">
@@ -24,9 +24,9 @@
       </div>
       <ul class="navbar-menu">
         <li><a href="#current">CURRENT</a></li>
-        <li><a href="html/page_ppt.html">PPT</a></li>
-        <li><a href="#">APP</a></li>
-        <li><a href="#">STUDY</a></li>
+        <li><a href="html/page_app.html">PROJECT</a></li>
+        <!-- <li><a href="#">APP</a></li>
+        <li><a href="#">STUDY</a></li> -->
         <li>
           <form name="g1form" method="post" action="https://escape-teamproject.herokuapp.com/home">
           <input type="hidden" id="gameBtn"/>
@@ -35,9 +35,9 @@
         </li>
       </ul>
       <ul class="navbar-icons">
-        <li>
+        <!-- <li>
           <a href="https://www.youtube.com/channel/UCeAvvY5H7PpBjjcQW2KYIgg" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
-        </li>
+        </li> -->
         <li>
           <a href="https://github.com/heojungeun" target="_blank"><i class="fab fa-github fa-lg"></i></a>
         </li>
@@ -45,14 +45,19 @@
     </nav>
     <div class="content">
       <div class="c-header main-header">
-        <p class="c-title">
+        <!-- <p class="c-title">
           Just Play:)
-        </p>
-        <p class="about-box">
-          > 반가워요!<br />
-          디자인을 좋아하는 모바일 개발자, 허정은입니다.<br />
-          Copyright © 2020 heojungeun
-        </p>
+        </p> -->
+        <div id="termynal" data-termynal data-ty-lineDelay="300">
+          <span data-ty="input">cd Korean/DEV/Android/HeoJeongEun</span>
+          <span data-ty="input">install WelcomeKit</span>
+          <span data-ty="progress"></span>
+          <span data-ty class="c-title">Just Play:)</span> 
+          <span data-ty>반가워요! 디자인을 좋아하는 모바일 개발자, 허정은입니다.</span>
+          <span data-ty>토이 프로젝트를 보러 왔나요?</span>
+          <span data-ty="input" data-ty-typeDelay="1000" data-ty-prompt="(y/n)">y</span>
+          <span data-ty="input" data-ty-cursor="▋"> ▋</span>
+        </div>
       </div>
       <div class="c-current-container">
         <div class="c-current-title">
@@ -95,6 +100,8 @@
         </div>
       </div>
     </div>
+    <script src="js/main.js" defer></script>
+    <script src="js/termynal.js" data-termynal-container="#termynal"></script>
     <script>
       GitHubCalendar(".calendar","heojungeun", { responsive: true });
     </script>

@@ -102,10 +102,14 @@ nav {
 
 .c-title {
   margin: 0;
-  padding-bottom: 50px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-top: 2px dashed var(--text-color);
   border-bottom: 2px dashed var(--text-color);
-  max-width: 500px;
+  /* max-width: 500px; */
   font-size: 50px;
+  text-align: center;
+  font-style: oblique;
 }
 
 .c-current-title {
