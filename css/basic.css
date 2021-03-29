@@ -252,13 +252,14 @@ nav {
   flex-direction: column;
   height: 350px;
   width: 400px;
-  background: var(--text-color);
+  background: transparent;
   font-family: 'neodgm';
   margin: 0;
   padding: 30px;
   margin-bottom: 30px;
   margin-right: 30px;
-  border-radius: 10px;
+  border-bottom: 1px dashed var(--text-color);
+  /* border-radius: 10px; */
 }
 
 .card-header {
@@ -273,6 +274,10 @@ nav {
 
 .app .card-img {
   object-fit: scale-down;
+}
+
+.card-content {
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 768px) {
