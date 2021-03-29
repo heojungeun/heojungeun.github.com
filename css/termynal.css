@@ -15,8 +15,8 @@
 
 [data-termynal] {
     /* width: 750px; */
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%;
+    max-width: 100%; */
     background: var(--color-bg);
     color: var(--color-text);
     font-size: 23px;
@@ -86,7 +86,6 @@
     -webkit-animation: blink 1s infinite;
             animation: blink 1s infinite;
 }
-
 
 /* Cursor animation */
 

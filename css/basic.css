@@ -27,6 +27,46 @@ a {
   color: var(--text-color);
 }
 
+input {
+  background: var(--space-color);
+  border: 0;
+  color: var(--color-text);
+  font-family: 'neodgm';
+}
+
+input:focus {outline:none;}
+
+/* .ty-input {
+  color: var(--color-text-subtle);
+  font-size: 23px;
+} */
+
+.ty-input input{
+  font-size: 23px;
+  /* margin-left: 15px; */
+  /* caret-color: transparent; */
+}
+
+/* pre {
+  display: inline;
+  margin: 0;
+}
+
+pre.caret-bar > span {
+  animation: blink 1.3s step-end infinite;
+  border-left: 4px solid white;
+} */
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
 nav {
   transition: all 350ms ease-out;
 }
