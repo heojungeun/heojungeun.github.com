@@ -21,3 +21,4 @@ let scrolled = () => {
 addEventListener('scroll', () => {
   navbarTag.style.setProperty('background', scrolled() > 50 ? "var(--space-color)" : "var(--navbar-background-color)");
 })
+

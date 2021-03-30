@@ -17,6 +17,7 @@
     /* width: 750px; */
     /* width: 100%;
     max-width: 100%; */
+    width: 100% !important;
     background: var(--color-bg);
     color: var(--color-text);
     font-size: 23px;

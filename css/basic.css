@@ -280,6 +280,10 @@ nav {
   color: var(--text-color);
 }
 
+.txt-ct {
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
