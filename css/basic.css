@@ -140,6 +140,23 @@ nav {
   height: 90vh;
 }
 
+.about-box {
+  text-align: center;
+}
+
+.c-event {
+  font-family: 'neodgm';
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+.flex-c{
+  display: flex;
+  justify-content: center;
+}
+
 .c-title {
   margin: 0;
   margin-bottom: 10px;
@@ -282,6 +299,10 @@ nav {
 
 .txt-ct {
   text-align: center;
+}
+
+.txt-sm {
+  font-size: 10px;
 }
 
 @media screen and (max-width: 768px) {
