@@ -80,6 +80,7 @@ nav {
   font-family: 'neodgm';
   position: sticky;
   top: 0px;
+  z-index: 100;
 }
 
 .navbar-logo {
@@ -144,12 +145,25 @@ nav {
   text-align: center;
 }
 
+  .about-box img{
+    height: 300px;
+    object-fit: contain;
+    object-position: 50% 50%;
+  }
+
 .c-event {
   font-family: 'neodgm';
   color: var(--text-color);
   display: flex;
   flex-direction: column;
   font-size: 10px;
+}
+
+.c-footer {
+  font-family: 'neodgm';
+  color: var(--text-color);
+  text-align: center;
+  font-size: 15px;
 }
 
 .flex-c{
